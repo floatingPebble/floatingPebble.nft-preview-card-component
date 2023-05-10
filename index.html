@@ -4,41 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
-
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 
     <title>Frontend Mentor | NFT preview card component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
 </head>
 
 <body>
-
-    Equilibrium #3429
-
-    Our Equilibrium collection promotes balance and calm.
-
-    0.041 ETH
-    3 days left
-
-    Creation of Jules Wyvern
-
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <main class="nft-card">
+        <figure class="main-img-container">
+            <img class="equilibrium" src="images/image-equilibrium.jpg" alt="Equilibrium">
+            <figure class="overlay">
+                <img class="view" src="images/icon-view.svg" alt="View icon">
+            </figure>
+        </figure>
+        <h1>Equilibrium #3429</h1>
+        <p class="description grayBlue">Our Equilibrium collection promotes balance and calm.</p>
+        <div class="price-and-daysLeft">
+            <div class="eth-and-price">
+                <img class="eth-icon" src="/images/icon-ethereum.svg" alt="Ethereum Icon">
+                <p class="price">0.041 ETH</p>
+            </div>
+            <div class="clock-and-days">
+                <img class="clock" src="images/icon-clock.svg" alt="Clock Icon">
+                <p class="daysLeft grayBlue">3 days left</p>
+            </div>
+        </div>
+        <div class="avatar-and-author">
+            <img class="avatar" src="images/image-avatar.png" alt="Author's avatar image" width="32px" height="32px">
+            <p class="grayBlue authorComplete">Creation of <span class="author">Jules Wyvern</span></p>
+        </div>
+    </main>
 </body>
 
 </html>
